@@ -19,9 +19,9 @@ const Footer = () => {
   ];
   
   const socialLinks = [
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Github, href: "#", label: "GitHub" }
+    { icon: Twitter, href: "https://x.com/BhattBuilds", label: "Twitter" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/shubham-bhatt-48b002250/", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/shubhambhatt037", label: "GitHub" }
   ];
 
   return (
