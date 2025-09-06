@@ -2,11 +2,11 @@
 export const APP_CONFIG = {
   // ConnectSphere app URL - change this based on your environment
   APP_URL: process.env.NODE_ENV === 'production' 
-    ? 'https://your-connectsphere-app.vercel.app' // Replace with your production URL
+    ? 'https://discord-clone-shubhambhatt037.vercel.app' // Replace with your actual Vercel URL
     : 'http://localhost:3000', // Development URL
   
   // Landing page URL
   LANDING_URL: process.env.NODE_ENV === 'production'
-    ? 'https://your-landing-page.vercel.app' // Replace with your production landing page URL
+    ? 'https://connectsphere-landing-page-shubhambhatt037.vercel.app' // Replace with your actual landing page URL
     : 'http://localhost:5173', // Development URL (Vite default)
 };
