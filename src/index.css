@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* ConnectSphere Dark Theme */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 221 100% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 6% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 6% 15%;
+    --muted-foreground: 0 0% 61%;
+
+    --accent: 221 100% 51%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 6% 15%;
+    --input: 240 6% 15%;
+    --ring: 221 100% 51%;
+
+    /* Custom ConnectSphere Colors */
+    --cosmic-start: 240 100% 7%;
+    --cosmic-mid: 240 93% 25%;
+    --cosmic-end: 0 0% 0%;
+    
+    --accent-blue: 221 100% 51%;
+    --accent-blue-hover: 221 100% 45%;
+    --text-gray: 220 9% 68%;
+    --bluish-gray: 218 11% 72%;
+    
+    /* Feature Category Colors */
+    --feature-blue: 220 100% 60%;
+    --feature-violet: 260 100% 70%;
+    --feature-teal: 180 100% 60%;
+    --feature-indigo: 240 100% 65%;
+    
+    /* AI Bot Special Colors */
+    --ai-glow: 260 100% 70%;
+    --ai-secondary: 280 100% 75%;
+    
+    /* Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(var(--cosmic-start)), hsl(var(--cosmic-mid)), hsl(var(--cosmic-end)));
+    --gradient-section: linear-gradient(180deg, hsl(240 85% 8%), hsl(240 90% 4%));
+    --gradient-section-overlay: radial-gradient(circle at center, hsl(var(--accent-blue) / 0.15), transparent 70%);
+    --gradient-glow: linear-gradient(90deg, transparent, hsl(var(--accent-blue) / 0.6), transparent);
+    --gradient-text: linear-gradient(135deg, hsl(var(--accent-blue)), hsl(283 100% 70%));
+    --gradient-button: linear-gradient(135deg, hsl(var(--accent-blue)), hsl(221 100% 60%), hsl(283 100% 70%));
+    --gradient-icon: linear-gradient(135deg, hsl(var(--accent-blue)), hsl(271 75% 67%));
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    --gradient-mesh: radial-gradient(ellipse 80% 50% at 20% 40%, hsl(var(--accent-blue) / 0.3), transparent),
+                     radial-gradient(ellipse 60% 80% at 80% 60%, hsl(283 100% 70% / 0.2), transparent);
+    
+    /* Feature Card Gradients */
+    --gradient-glass-blue: linear-gradient(135deg, hsl(var(--feature-blue) / 0.15), hsl(var(--feature-blue) / 0.05));
+    --gradient-glass-violet: linear-gradient(135deg, hsl(var(--feature-violet) / 0.15), hsl(var(--feature-violet) / 0.05));
+    --gradient-glass-teal: linear-gradient(135deg, hsl(var(--feature-teal) / 0.15), hsl(var(--feature-teal) / 0.05));
+    --gradient-glass-indigo: linear-gradient(135deg, hsl(var(--feature-indigo) / 0.15), hsl(var(--feature-indigo) / 0.05));
+    --gradient-ai-special: linear-gradient(135deg, hsl(var(--ai-glow) / 0.2), hsl(var(--ai-secondary) / 0.1));
+    
+    /* Icon Gradients */
+    --gradient-icon-blue: linear-gradient(135deg, hsl(var(--feature-blue)), hsl(var(--feature-blue) / 0.8));
+    --gradient-icon-violet: linear-gradient(135deg, hsl(var(--feature-violet)), hsl(var(--ai-secondary)));
+    --gradient-icon-teal: linear-gradient(135deg, hsl(var(--feature-teal)), hsl(var(--feature-teal) / 0.8));
+    --gradient-icon-indigo: linear-gradient(135deg, hsl(var(--feature-indigo)), hsl(var(--feature-indigo) / 0.8));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--accent-blue) / 0.3);
+    --shadow-hero: 0 20px 60px hsl(var(--accent-blue) / 0.2);
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --shadow-button-glow: 0 0 30px hsl(var(--accent-blue) / 0.4);
+    --shadow-text-glow: 0 0 30px hsl(var(--accent-blue) / 0.6);
+    --shadow-badge-glow: 0 0 20px hsl(var(--accent-blue) / 0.2);
+    
+    /* Enhanced Feature Card Shadows */
+    --shadow-card-stack: 0 25px 60px rgba(0, 0, 0, 0.4), 0 15px 40px rgba(0, 0, 0, 0.3);
+    --shadow-card-blue: 0 20px 50px hsl(var(--feature-blue) / 0.25), 0 10px 30px rgba(0, 0, 0, 0.3);
+    --shadow-card-violet: 0 20px 50px hsl(var(--feature-violet) / 0.25), 0 10px 30px rgba(0, 0, 0, 0.3);
+    --shadow-card-teal: 0 20px 50px hsl(var(--feature-teal) / 0.25), 0 10px 30px rgba(0, 0, 0, 0.3);
+    --shadow-card-indigo: 0 20px 50px hsl(var(--feature-indigo) / 0.25), 0 10px 30px rgba(0, 0, 0, 0.3);
+    --shadow-ai-glow: 0 0 60px hsl(var(--ai-glow) / 0.4), 0 20px 50px hsl(var(--ai-glow) / 0.25), 0 10px 30px rgba(0, 0, 0, 0.3);
+    
+    /* Enhanced Card Hover Shadows */
+    --shadow-card-hover: 0 35px 80px rgba(0, 0, 0, 0.5), 0 25px 50px rgba(0, 0, 0, 0.4);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
