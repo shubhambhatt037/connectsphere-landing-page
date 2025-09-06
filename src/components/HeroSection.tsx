@@ -75,13 +75,13 @@ const HeroSection = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <Button variant="gradient" size="lg" className="px-8 py-6 text-lg font-semibold rounded-full transform hover:scale-105 font-satoshi group">
+              <Button variant="gradient" size="lg" className="px-8 py-6 text-lg rounded-full transform hover:scale-105 font-satoshi group">
                 <span className="group-hover:animate-pulse">Start Free Today</span>
               </Button>
               <Button 
                 variant="glass" 
                 size="lg" 
-                className="px-8 py-6 text-lg font-semibold rounded-full font-satoshi"
+                className="px-8 py-6 text-lg rounded-full font-satoshi"
                 onClick={() => scrollToSection('demo')}
               >
                 Watch Demo

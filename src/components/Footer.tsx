@@ -55,7 +55,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 items-center">
           {/* Left - Logo & Tagline */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold font-satoshi text-white mb-3 bg-text-gradient bg-clip-text text-transparent">
+            <h3 className="text-2xl font-satoshi text-white mb-3 bg-text-gradient bg-clip-text text-transparent">
               ConnectSphere
             </h3>
             <p className="text-base font-inter text-bluish-gray leading-relaxed">

@@ -231,7 +231,7 @@ const FeaturesSection = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Enhanced section header */}
         <div className="text-center mb-24">
-          <h2 className="text-6xl font-bold font-satoshi text-white leading-[110%] mb-6 bg-text-gradient bg-clip-text text-transparent">
+          <h2 className="text-6xl font-satoshi text-white leading-[110%] mb-6 bg-text-gradient bg-clip-text text-transparent">
             Why ConnectSphere?
           </h2>
           <p className="text-xl font-inter text-bluish-gray max-w-3xl mx-auto leading-relaxed">
@@ -262,7 +262,7 @@ const FeaturesSection = () => {
                     />
                   </div>
                   <div className="flex-1">
-                     <h3 className="text-3xl font-bold font-inter text-white mb-3 leading-tight group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-blue-100 group-hover:to-purple-100 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500">
+                     <h3 className="text-3xl font-inter text-white mb-3 leading-tight group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-blue-100 group-hover:to-purple-100 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500">
                        {feature.title}
                      </h3>
                   </div>
