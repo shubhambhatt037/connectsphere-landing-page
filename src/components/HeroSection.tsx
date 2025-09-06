@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 import ProductMockup from "./ProductMockup";
+import { APP_CONFIG } from "@/config/app";
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -75,7 +76,12 @@ const HeroSection = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <Button variant="gradient" size="lg" className="px-8 py-6 text-lg rounded-full transform hover:scale-105 font-satoshi group">
+              <Button 
+                variant="gradient" 
+                size="lg" 
+                className="px-8 py-6 text-lg rounded-full transform hover:scale-105 font-satoshi group"
+                onClick={() => window.open(APP_CONFIG.APP_URL, '_blank')}
+              >
                 <span className="group-hover:animate-pulse">Start Free Today</span>
               </Button>
               <Button 

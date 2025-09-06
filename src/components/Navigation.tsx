@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { APP_CONFIG } from "@/config/app";
 
 const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
@@ -48,7 +49,7 @@ const Navigation = () => {
             <Button
               variant="outline"
               className="border-white/50 text-foreground hover:bg-accent-blue hover:border-accent-blue hover:text-white transition-all duration-300"
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open(APP_CONFIG.APP_URL, '_blank')}
             >
               Launch App
             </Button>
