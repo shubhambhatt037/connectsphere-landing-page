@@ -78,54 +78,16 @@ const VideoSection = () => {
               /* Video Playing State */
               <div className="p-8">
                 <div className="relative bg-black/20 rounded-2xl overflow-hidden">
-                  {/* Mock Video Player */}
-                  <div className="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center relative">
-                    {/* Video Content Placeholder */}
-                    <div className="text-center space-y-6">
-                      <div className="w-24 h-24 bg-gradient-to-br from-violet-400 to-purple-600 rounded-full flex items-center justify-center mx-auto animate-pulse">
-                        <Play className="w-8 h-8 text-white" fill="currentColor" />
-                      </div>
-                      <div className="space-y-2">
-                        <h3 className="text-2xl text-white">ConnectSphere Demo</h3>
-                        <p className="text-gray-300">Experience seamless team collaboration</p>
-                      </div>
-                      
-                      {/* Demo Features List */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto text-left">
-                        <div className="flex items-center gap-3 text-gray-300">
-                          <div className="w-2 h-2 bg-violet-400 rounded-full"></div>
-                          <span>Real-time messaging</span>
-                        </div>
-                        <div className="flex items-center gap-3 text-gray-300">
-                          <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                          <span>AI-powered summaries</span>
-                        </div>
-                        <div className="flex items-center gap-3 text-gray-300">
-                          <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                          <span>Server management</span>
-                        </div>
-                        <div className="flex items-center gap-3 text-gray-300">
-                          <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
-                          <span>Modern UI/UX</span>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* Video Controls */}
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <div className="bg-black/50 backdrop-blur-sm rounded-lg p-4 flex items-center justify-between">
-                        <div className="flex items-center gap-4">
-                          <button 
-                            onClick={() => setIsVideoPlaying(false)}
-                            className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
-                          >
-                            <div className="w-3 h-3 bg-white rounded-sm"></div>
-                          </button>
-                          <span className="text-white text-sm">1:23 / 2:00</span>
-                        </div>
-                        <div className="text-white text-sm">HD Quality</div>
-                      </div>
-                    </div>
+                  <div className="aspect-video relative">
+                    <iframe
+                      className="absolute inset-0 w-full h-full"
+                      src="https://www.youtube.com/embed/dtkBiD19LW8?si=t8tExsZIz4qBk3bT&autoplay=1"
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    />
                   </div>
                 </div>
               </div>

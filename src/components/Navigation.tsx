@@ -20,9 +20,17 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="text-2xl text-foreground hover:text-accent-blue transition-colors duration-300"
+              className="flex items-center gap-2 group"
+              aria-label="Go to home"
             >
-              ConnectSphere
+              <img
+                src="/lovable-uploads/feb4d2b0-4d72-4627-9d8b-08506de2fd1b.png"
+                alt="ConnectSphere logo"
+                className="h-8 w-8 rounded-md shadow-sm group-hover:scale-105 transition-transform"
+              />
+              <span className="text-2xl text-foreground group-hover:text-accent-blue transition-colors duration-300">
+                ConnectSphere
+              </span>
             </button>
           </div>
 
